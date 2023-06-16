@@ -11,30 +11,31 @@
   <h1>Welcome to the Pizza Parlor</h1>
 
 
-  <form id="pizzaOrder">
-    <h2>Choose your Pizza</h2>
+  <form>
+    <h2>Choose your Toppings</h2>
     <label>
-      <input type="radio" name="option" value="veggie"> Veggie
+      <input id="veggie" type="radio" name="topping" value="veggie"> Veggie
     </label>
     <label>
-      <input type="radio" name="option" value="plain"> Plain Cheese
+      <input id="plain" type="radio" name="topping" value="plain"> Plain Cheese
     </label>
     <label>
-      <input type="radio" name="option" value="pepperoni"> Pepperoni
+      <input id="pepperoni" type="radio" name="topping" value="pepperoni"> Pepperoni
     </label>
+
+
     <h2>Choose your Size</h2>
     <label>
-      <input type="radio" name="option" value="small"> Small
+      <input type="radio" name="size" value="small"> Small
     </label>
     <label>
-      <input type="radio" name="option" value="medium"> Medium
+      <input type="radio" name="size" value="medium"> Medium
     </label>
     <label>
-      <input type="radio" name="option" value="large"> Large
+      <input type="radio" name="size" value="large"> Large
     </label>
   </form>
-
-  <button onclick="selectedOptions()">Order</button>
+  <button onclick="getOrder()">Order</button>
 
 
 

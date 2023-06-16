@@ -1,24 +1,39 @@
-
-
-
-
-
 function Pizza() {
   this.toppings = {};
-  this.size = {}
+  this.size = {};
 }
 
-Pizza.prototype.chooseToppings = function () {
-  return this.size + this.toppings + " pizza"
+
+Pizza.prototype.getTopping = function () {
+  let veggiePizza = document.querySelector("input#veggie").value;
+  let plainPizza = document.querySelector("input#plain").value;
+  let pepperoniPizza = document.querySelector("input#pepperoni").value;
+
+  if (veggiePizza === true) {
+    return value;
+  }
+  else if (plainPizza === true) {
+    return value;
+  }
+  else if (pepperoniPizza === true) {
+    return value;
+  }
 }
 
-// Pizza.prototype.customerOrder = function () {
 
-//   return this.size + " pizza with " + this.toppings;
+
+
+// // function getOrder() {
+//   let newOrder = new Pizza();
+}
+
+
+
 
 
 //UI Logic:
 
-function getSelectedOptions() {
+function getOrder() {
+
 
 }
