@@ -1,7 +1,14 @@
 Describe Pizza()
 
-Test: "It should retun a pizza object with toppings and size options."
-Code: suzPizza = new Pizza (["chicken", "artichocke", "roasted garlic"] , "large")
+Test: "It should retun a pizza object with topping and size options."
+Code: suzPizza = new Pizza ("chicken", "large")
 Expected Output: suzPizza;
-                toppings: chicken, artichoke, roasted garlic;
+                toppings: chicken;
                 size: large;
+
+Test: "It should allow for more than one pizza topping"
+Code: suzPizza = new Pizza (["chicken, "artichoke", "garlic"], "large")
+Expected Output: suzPizza;
+                toppings: chicken, artichoke, garlic
+                size: large;
+                
