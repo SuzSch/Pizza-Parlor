@@ -9,18 +9,22 @@
 
 <body>
   <h1>Welcome to the Pizza Parlor</h1>
+  <h2>Choose your Pizza</h2>
 
   <form id="pizzaOrder">
 
-    <select id="meatToppings">
-      <option></option>
-      <option>Peperoni</option>
-      <option>Sausage</option>
-      <option>Chicken</option>
-      <option>Jack Fruit</option>
+    <label>
+      <input type="checkbox" name="option" value="option1"> Veggie
+    </label>
+    <label>
+      <input type="checkbox" name="option" value="option2"> Plain Cheese
+    </label>
+    <label>
+      <input type="checkbox" name="option" value="option3"> Pepperoni
+    </label>
+  </form>
 
-    </select>
-
+  <button onclick="getSelectedOptions()">Submit</button>
 
 
 
