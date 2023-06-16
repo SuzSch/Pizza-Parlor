@@ -4,18 +4,20 @@ function Pizza() {
 }
 
 
+
+
 Pizza.prototype.getTopping = function () {
   let veggiePizza = document.querySelector("input#veggie").value;
   let plainPizza = document.querySelector("input#plain").value;
   let pepperoniPizza = document.querySelector("input#pepperoni").value;
 
-  if (veggiePizza === true) {
+  if (veggiePizza === "true") {
     return value;
   }
-  else if (plainPizza === true) {
+  else if (plainPizza === "true") {
     return value;
   }
-  else if (pepperoniPizza === true) {
+  else if (pepperoniPizza === "true") {
     return value;
   }
 }
