@@ -11,4 +11,8 @@ Code: suzPizza = new Pizza (["chicken, "artichoke", "garlic"], "large")
 Expected Output: suzPizza;
                 toppings: chicken, artichoke, garlic
                 size: large;
-                
+
+Test: Create a pizza prototype method that will return a string show the customer their order.
+Code: Pizza.prototype.pizzaOrder() 
+  size + "pizza with" + toppings;
+Expected Output: "Large pizza with chicken, artichoke, garlic"
