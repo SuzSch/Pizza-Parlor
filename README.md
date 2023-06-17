@@ -17,12 +17,3 @@ Code: Pizza.prototype.pizzaOrder()
   size + "pizza with" + toppings;
 Expected Output: "Large pizza with chicken, artichoke, garlic"
 
-Test: Update Pizza construtor to get specific options from checkboxes.
-Code: function Pizza() {
-  this.toppings = {};
-  this.size = {}
-}
-Expected Output: suzPizza;
-                  toppings: veggie
-                  size: small
-                  
