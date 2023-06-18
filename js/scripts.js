@@ -4,11 +4,6 @@ function Pizza(toppings, size) {
 }
 
 
-
-
-
-
-
 Pizza.prototype.cost = function () {
   const sizePrice = {
     small: 5.99,
@@ -23,12 +18,13 @@ Pizza.prototype.cost = function () {
 window.onload = function () {
   document.getElementById("order").onclick = function (event) {
     event.preventDefault();
-    const pizzaSize = document.querySelector("input[name=size]:checked").value
+    let pizzaSize = document.querySelector("input[name=size]:checked").value
 
-    const pizzaTopping = document.querySelectorAll('input[name="topping"]:checked');
+    let pizzaTopping = document.querySelectorAll('input[name="topping"]:checked');
     let checkedToppings = [];
     pizzaTopping.forEach((checkbox) => {
       checkedToppings.push(checkbox.value)
     });
+    customOrder.innertext = "You have ordered a" + pizzaSize + "with" + pizzaTopping
   };
 }
