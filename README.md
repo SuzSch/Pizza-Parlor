@@ -25,5 +25,9 @@ Code: let toppingCost = Pizza toppings number * 1;
 Expected Output: suzPizza.toppingCost;
                   3.00
 
+Test: "Add the size cost and topping cost together and return the total.
+Code: let totalCost = baseCost + toppingCost;
+      return totalCost;
+Expected Output: suzPizza.totalCost = 12.99
 
                   
