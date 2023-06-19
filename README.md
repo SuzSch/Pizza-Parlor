@@ -19,4 +19,11 @@ Code: const sizePrice =
       large: 9.99
 Expected Output: suzPizza.sizePrice;
                   9.99
+
+Test: "Add extra cost for each topping"
+Code: let toppingCost = Pizza toppings number * 1;
+Expected Output: suzPizza.toppingCost;
+                  3.00
+
+
                   

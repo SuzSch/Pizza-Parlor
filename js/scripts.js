@@ -10,6 +10,7 @@ Pizza.prototype.cost = function () {
     large: 9.99,
   }
   let basePrice = sizePrices[this.size];
+  let toppingCost = this.toppings.length * 1;
 };
 
 
