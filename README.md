@@ -12,8 +12,11 @@ Expected Output: suzPizza;
                 toppings: chicken, artichoke, garlic
                 size: large;
 
-Test: Create a pizza prototype method that will return a string show the customer their order.
-Code: Pizza.prototype.pizzaOrder() 
-  size + "pizza with" + toppings;
-Expected Output: "Large pizza with chicken, artichoke, garlic"
-
+Test: "Creat a .cost method to specifiy the different cost for the different sizes.
+Code: const sizePrice = 
+      small: 5.99
+      medium: 7.99
+      large: 9.99
+Expected Output: suzPizza.sizePrice;
+                  9.99
+                  

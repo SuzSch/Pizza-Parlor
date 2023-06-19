@@ -3,16 +3,28 @@ function Pizza(toppings, size) {
   this.size = size;
 }
 
-
 Pizza.prototype.cost = function () {
-  const sizePrice = {
+  const sizePrices = {
     small: 5.99,
     medium: 7.99,
     large: 9.99,
-  };
+  }
+  let basePrice = sizePrices[this.size];
+};
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 //UI Logic:
 window.onload = function () {
@@ -25,6 +37,6 @@ window.onload = function () {
     pizzaTopping.forEach((checkbox) => {
       checkedToppings.push(checkbox.value)
     });
-    customOrder.innertext = "You have ordered a" + pizzaSize + "with" + pizzaTopping
+    customOrder.innertext = "You have ordered a" + pizzaSize + "with" + checkedToppings
   };
 }
