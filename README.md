@@ -28,6 +28,6 @@ Expected Output: suzPizza.toppingCost;
 Test: "Add the size cost and topping cost together and return the total.
 Code: let totalCost = baseCost + toppingCost;
       return totalCost;
-Expected Output: suzPizza.totalCost = 12.99
+Expected Output: suzPizza.cost = 12.99
 
                   
