@@ -29,6 +29,6 @@ window.onload = function () {
     pizzaTopping.forEach((checkbox) => {
       checkedToppings.push(checkbox.value)
     });
-    customOrder.innertext = "You have ordered a" + pizzaSize + "with" + checkedToppings
+    customOrder.innertext = "You have ordered a " + pizzaSize + " with " + checkedToppings
   };
 }

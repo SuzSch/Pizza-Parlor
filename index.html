@@ -10,27 +10,26 @@
 <body>
   <h1>Welcome to the Pizza Parlor</h1>
 
-  <div>
-    <h2>Choose your Toppings</h2>
-    <input id="pepperoni" type="checkbox" name="topping" value="Pepperoni "> Pepperoni
-    <input id="artichokes" type="checkbox" name="topping" value="artichokes"> Artichokes
-    <input id="onions" type="checkbox" name="topping" value="Onions"> Onions
-    <input id="peppers" type="checkbox" name="topping" value="Peppers"> Peppers
-    <input id="garlic" type="checkbox" name="topping" value="Garlic"> Roasted Garlic
-  </div>
-
-  <div>
-    <h2>Choose your Size</h2>
-    <input type="radio" name="size" value="Small"> Small
-    <input type="radio" name="size" value="Medium"> Medium
-    <input type="radio" name="size" value="Large"> Large
-  </div>
+  <form id=pizza-form>
+    <div>
+      <h2>Choose your Toppings</h2>
+      <input id="pepperoni" type="checkbox" name="topping" value="Pepperoni "> Pepperoni
+      <input id="artichokes" type="checkbox" name="topping" value="artichokes"> Artichokes
+      <input id="onions" type="checkbox" name="topping" value="Onions"> Onions
+      <input id="peppers" type="checkbox" name="topping" value="Peppers"> Peppers
+      <input id="garlic" type="checkbox" name="topping" value="Garlic"> Roasted Garlic
+    </div>
+    <div>
+      <h2>Choose your Size</h2>
+      <input type="radio" name="size" value="Small"> Small
+      <input type="radio" name="size" value="Medium"> Medium
+      <input type="radio" name="size" value="Large"> Large
+    </div>
+  </form>
 
   <button id="order">Order</button>
 
   <div id="customOrder"></div>
-  <div id="price"></div>
-
 </body>
 
 </html>
