@@ -1,6 +1,6 @@
 Describe Pizza()
 
-Test: "It should retun a pizza object with topping and size options."
+Test: "It should return a pizza object with topping and size options."
 Code: suzPizza = new Pizza ("chicken", "large")
 Expected Output: suzPizza;
                 toppings: chicken;
@@ -12,7 +12,7 @@ Expected Output: suzPizza;
                 toppings: chicken, artichoke, garlic
                 size: large;
 
-Test: "Creat a .cost method to specifiy the different cost for the different sizes.
+Test: "Create a .cost method to specify the different cost for the different sizes.
 Code: const sizePrice = 
       small: 5.99
       medium: 7.99
