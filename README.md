@@ -54,7 +54,7 @@ Expected Output: suzPizza.cost = 12.99
 
 ## Known Bugs
 
-* The UI logic in JS is not completed yet so the order will not display.
+* No know bugs.
 
 ## License
 

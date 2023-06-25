@@ -16,19 +16,21 @@ Pizza.prototype.cost = function () {
 };
 
 
-
-
-//UI Logic:
 window.onload = function () {
   document.getElementById("order").onclick = function (event) {
     event.preventDefault();
-    let pizzaSize = document.querySelector("input[name=size]:checked").value
 
+    let pizzaSize = document.querySelector("input[name=size]:checked").value
     let pizzaTopping = document.querySelectorAll('input[name="topping"]:checked');
     let checkedToppings = [];
     pizzaTopping.forEach((checkbox) => {
       checkedToppings.push(checkbox.value)
     });
-    customOrder.innertext = "You have ordered a " + pizzaSize + " with " + checkedToppings
+
+    let pizza = new Pizza(checkedToppings, pizzaSize);
+    let pizzaCost = pizza.cost();
+    let customOrder = document.getElementById("custom-order");
+    customOrder.innerText = "You have ordered a " + pizzaSize + " pizza with " + checkedToppings.join(", ") + ". The total cost is $" + pizzaCost;
+    document.getElementById("pizza-form").reset();
   };
 }
